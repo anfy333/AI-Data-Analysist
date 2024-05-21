@@ -5,7 +5,8 @@ import re
 
 app = Flask(__name__)
 asst_id = "asst_z6YJHscX2lXzhm5vQNDjJJa5"
-client = OpenAI(api_key="sk-proj-pA3BSdMbPaiyEsE11IKrT3BlbkFJB6uCq3oWNJ00Z3V8qKZL")
+#insert a project api key to test, it doesn't allow me to leave it here as it identifies it as sensitive information
+client = OpenAI(api_key="sk...key")
 
 @app.route("/", methods=["GET", "POST"])
 def hello_world():
